@@ -1,0 +1,524 @@
+.basket {
+
+  .basket-tabs {
+    margin-bottom: 30px;
+
+    span {
+      display: block;
+    }
+
+    .icon {
+      height: 60px;
+
+      img {
+        height: 60px;
+      }
+    }
+
+    .tab-text {
+      font-size: 56px;
+      font-weight: 900;
+      opacity: 0.15;
+      color: $main-color;
+    }
+    .active {
+      opacity: 1!important;
+    }
+
+  }
+
+
+  .basket-table {
+
+    .basket-tt {
+      margin-bottom: 30px;
+      padding: 0 15px;
+
+      .title-line {
+        background: $main-color!important;
+        border: none;
+        padding: 15px 0;
+        color: $white;
+      }
+
+      .table-line {
+        border-bottom: solid 1px $border;
+        border-left: solid 1px $border;
+
+        .table-inner-line {
+          padding: 15px;
+          border-right: solid 1px $border;
+
+          .price {
+            display: block;
+            line-height: 80px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 900;
+            color: $main-color;
+          }
+
+          .mobile-title {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .no-right-border {
+      border-right: none!important;
+    }
+    .no-left-border {
+      border-left: none!important;
+    }
+
+    a {
+      color: $main-color;
+
+      &:hover {
+        color: $text-color;
+      }
+    }
+
+    img {
+      height: 80px;
+      margin-right: 20px;
+    }
+
+    .discount-code {
+      span {
+        color: $text-color;
+        font-weight: 900;
+        font-size: 16px;
+      }
+      input {
+        background: $form-bg;
+        border: none;
+        line-height: 30px;
+        padding: 0 10px;
+        width: 140px;
+        outline: none;
+        margin-left: 10px;
+      }
+      button {
+        background: $main-color;
+        color: $white;
+        font-weight: 900;
+        padding: 0 20px;
+        line-height: 30px;
+        border: none;
+        margin-left: 10px;
+      }
+    }
+
+    .total {
+      font-size: 18px;
+      color: $text-color;
+
+      ul {
+        margin: 0;
+      }
+
+      span {
+        display: inline-block;;
+        width: 120px;
+      }
+    }
+
+    .basket-buttons {
+      margin-bottom: 50px;
+
+      a {
+        display: inline-block;
+        line-height: 60px;
+        color: $white;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 0 40px;
+        background: $main-color;
+        letter-spacing: 2px;
+        margin-left: 20px;
+
+        &:hover {
+          background: $main-color-dark;
+        }
+
+        img {
+          height: 20px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 1024px) {
+    .basket-tabs {
+
+      .icon {
+        height: 40px;
+
+        img {
+          height: 40px;
+        }
+      }
+
+      .tab-text {
+        font-size: 40px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .basket-tabs {
+
+      .tab-text {
+        font-size: 30px;
+      }
+
+      .icon {
+
+        img {
+          height: 30px;
+        }
+      }
+    }
+
+    .basket-table {
+
+      .title-line {
+        display: none;
+      }
+
+      .table-line {
+        margin-bottom: 20px;
+        border-bottom: none;
+        border-top: none;
+
+        .table-inner-line {
+          border-bottom: none;
+          border-top: solid 1px $border;
+
+          a {
+            img {
+              float: left;
+            }
+          }
+
+          .mobile-title {
+            display: block!important;
+            width: 100%;
+            font-size: 12px;
+            font-weight: 700;
+            text-align: left;
+          }
+
+          .price {
+            text-align: left;
+          }
+        }
+      }
+
+
+      .basket-buttons {
+
+        a {
+          font-size: 14px;
+          padding: 0 15px;
+          letter-spacing: 1px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 576px) {
+
+    .basket-tabs {
+
+      .tab-text {
+        font-size: 15px;
+      }
+
+      .icon {
+
+        img {
+          height: 30px;
+        }
+      }
+    }
+
+    .basket-table {
+
+        .title-line {
+          display: none;
+        }
+
+        .table-line {
+          margin-bottom: 20px;
+          border-bottom: none;
+          border-top: solid 1px $border;
+
+          .table-inner-line {
+            border-bottom: solid 1px $border;
+
+            a {
+              img {
+                float: left;
+              }
+            }
+
+            .mobile-title {
+              display: block!important;
+              width: 100%;
+              font-size: 12px;
+              font-weight: 700;
+              text-align: left;
+            }
+
+            .price {
+              text-align: left;
+            }
+          }
+        }
+
+
+        .basket-buttons {
+
+        a {
+          font-size: 14px;
+          padding: 0 15px;
+          letter-spacing: 1px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.forms {
+  margin: 50px 0;
+
+  h2 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+
+.registered-address {
+
+  .address-box {
+    border: solid 1px $border;
+    padding: 30px;
+
+    .address {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+  }
+
+  a {
+    color: $text-color;
+    font-weight: 700;
+
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  .address-links {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  @media(max-width: 576px) {
+    a{
+      font-size: 16px;
+    }
+  }
+}
+
+.registered-card {
+  margin-top: 50px;
+
+  .form-line-no-line {
+    width: 100%;
+  }
+
+  .form-cc {
+    padding: 10px 10px 10px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 10px;
+    border: solid 1px $border;
+    position: relative;
+
+    input {
+      position: absolute;
+      left: 15px;
+      top: 16px;
+    }
+    label {
+      margin: 0;
+    }
+  }
+}
+
+
+.payment_successful {
+  padding: 50px 0;
+
+  h2 {
+    font-weight: 700;
+    color: $main-color;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+  }
+
+  span {
+    display: block;
+  }
+
+  .status {
+    margin-bottom: 50px;
+
+    .result {
+      font-size: 54px;
+      font-weight: 700;
+    }
+
+    a {
+      display: inline-block;
+      background: $main-color;
+      color: $white;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 0 30px;
+      line-height: 30px;
+      margin-top: 20px;
+    }
+  }
+
+  .logo {
+    display:block;
+    margin-top: 50px;
+
+    img {
+      height: 70px;
+    }
+  }
+
+  .forms {
+    h2 {
+      margin-bottom: 5px;
+    }
+    span {
+      display: block;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media(max-width: 1024px) {
+    .status {
+
+      .result {
+        font-size: 44px;
+      }
+    }
+  }
+
+  @media(max-width: 576px) {
+    .status {
+
+      img {
+        height: 140px;
+      }
+      .result {
+        font-size: 34px;
+      }
+    }
+  }
+}
+
+.purchased-product {
+  border: solid 1px $border;
+  padding: 20px;
+
+  .purchased-name {
+
+    a {
+      color: $main-color;
+      font-weight: 700;
+      font-size: 18px;
+
+      &:hover {
+        color: $text-color;
+      }
+    }
+  }
+
+  table, tr, td {
+    border: none;
+    padding: 0;
+  }
+
+  img {
+    height: 120px;
+    float: left;
+    margin-right: 20px;
+  }
+
+  .order-status {
+    font-size: 14px;
+    color: $main-color;
+    font-weight: 700;
+  }
+  .price {
+    font-size: 20px;
+    font-weight: 900;
+    color: $text-color;
+    display: block;
+    padding: 15px 0;
+  }
+
+  table {
+    font-size: 14px;
+    margin: 0;
+
+    td {
+      padding-bottom: 5px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .purchased-name {
+      text-align: center;
+
+      a {
+        img {
+          float: none;
+          margin: auto;
+        }
+        span {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    border: none;
+  }
+}

@@ -1,0 +1,229 @@
+.detail-content {
+  margin-bottom: 100px;
+  font-size: 14px;
+
+  h1 {
+    color: $main-color;
+    font-size: 26px;
+  }
+  a {
+    color: $main-color;
+
+    &:hover {
+      color: $text-color;
+      text-decoration: underline;
+    }
+  }
+
+  .prices {
+    padding: 10px 0 0 0!important;
+    color: $main-color!important;
+
+    .old {
+      margin-right: 20px;
+    }
+  }
+  .winnings {
+    color: $main-color;
+  }
+
+  .add-basket {
+    padding: 20px 0;
+  }
+
+  .inf {
+    list-style-image: url("../images/list_icon.svg");
+    padding-left: 15px;
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+
+  @media(max-width: 768px) {
+    margin-bottom: 0px;
+  }
+}
+
+
+.detail-tab-content {
+
+  ul {
+    list-style-image: url("../images/list_icon.svg");
+
+    li {
+      font-size: 14px;
+
+      .title {
+        display: inline-block;
+        width: 140px;
+      }
+    }
+  }
+
+  .image-content {
+    margin-top: 30px;
+  }
+
+  @media(max-width: 768px) {
+    ul {
+      padding-left: 10px;
+      li {
+        font-size: 12px;
+
+        .title {
+          width: 110px;
+        }
+      }
+    }
+  }
+}
+
+.add-basket-button {
+  background: $main-color-dark;
+  color: $white;
+  font-weight: 600;
+  border: none;
+  padding: 0 30px;
+  line-height: 50px;
+  outline: none;
+  @include br-0;
+  @include br-r8;
+  @include transition;
+
+  &:hover {
+    cursor: pointer;
+    background: $main-color;
+  }
+}
+
+
+
+.detail-tabs {
+  background: $tabs-bg;
+
+  li {
+    margin-right: -5px!important;
+
+    a {
+      display: block;
+      line-height: 50px;
+      color: $white;
+      padding: 0 15px;
+
+      &:hover {
+        background: $main-color-dark;
+      }
+    }
+  }
+  .active {
+    a {
+      background: $main-color-dark;
+    }
+  }
+
+  @media (max-width: 576px) {
+    height: 50px;
+    margin-bottom: 30px;
+
+    ul {
+      white-space: nowrap;
+      overflow: auto;
+    }
+  }
+}
+
+.detail-slide {
+  margin-bottom: 30px;
+
+  .slick-slide {
+    text-align: center;
+
+    img {
+      margin: auto;
+    }
+  }
+
+  button {
+    top: 50%;
+    position: absolute;
+    z-index: 9999;
+    text-indent: -9999px;
+    height: 60px;
+    width: 36px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    @include transition;
+  }
+  .slick-next {
+    right: 0;
+    background: url("../images/right_arrow.svg") no-repeat;
+
+    &:hover {
+      background: url("../images/right_arrow_h.svg") no-repeat;
+    }
+  }
+  .slick-prev {
+    background: url("../images/left_arrow.svg") no-repeat;
+
+    &:hover {
+      background: url("../images/left_arrow_h.svg") no-repeat;
+    }
+  }
+
+
+  @media (max-width: 576px) {
+
+    .slick-slide {
+      img {
+        width: 75%!important;
+      }
+    }
+
+    button {
+      top: 40%;
+    }
+  }
+}
+
+.share-products {
+  margin-top: 30px;
+
+  span {
+    font-size: 16px;
+    font-weight: 700;
+    color: $main-color;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  li {
+    margin-right: 0px!important;
+
+    a {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      background: $black;
+      color: $white;
+      -webkit-border-radius: 18px;
+      -moz-border-radius: 18px;
+      border-radius: 18px;
+
+      &:hover {
+        background: $main-color;
+        color: $white;
+      }
+    }
+  }
+}
+
+.thumbnails {
+
+  @media(max-width: 576px) {
+    margin-bottom: 30px;
+  }
+}

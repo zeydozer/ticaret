@@ -1,0 +1,122 @@
+.main-slider {
+
+  .slider-item {
+    height: 680px;
+  }
+
+  @media (max-width: 1024px) {
+    .slider-item {
+      height: 540px;
+    }
+  }
+  @media (max-width: 576px) {
+    .slider-item {
+      height: 340px;
+    }
+  }
+}
+
+
+.main-content {
+  position: relative;
+  top: -100px;
+}
+
+
+
+
+.main-products {
+  margin-bottom: 50px;
+
+  .main-products-item {
+    background: url("../images/mainbox_bg.png") no-repeat;
+    background-size: cover;
+    height: 340px;
+    text-align: right;
+    color: $white;
+    padding: 30px;
+    position: relative;
+
+    h3 {
+      display: block;
+      width: 80%;
+      @include transition-fast;
+      color: $white;
+    }
+    
+    .price-box {
+      width: 160px;
+      height: 160px;
+      -webkit-border-radius: 80px;
+      -moz-border-radius: 80px;
+      border-radius: 80px;
+      background: $white;
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+      padding: 9px;
+      color: $main-color;
+
+      .price {
+        border: dashed 2px $main-color;
+        width: 142px;
+        height: 142px;
+        -webkit-border-radius: 71px;
+        -moz-border-radius: 71px;
+        border-radius: 71px;
+        text-align: center;
+        padding-top: 28px;
+
+        span {
+          display: block;
+        }
+        .old {
+          font-size: 22px;
+          position: relative;
+          text-decoration: line-through;
+        }
+        .product-price {
+          font-size: 36px;
+          line-height: 30px;
+        }
+      }
+
+      .discount {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background: $main-color-dark;
+        color: $white;
+        font-size: 22px;
+        line-height: 50px;
+        text-align: center;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px;
+        right: 0;
+        bottom: 0;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      background: $main-color;
+
+      h3 {
+        font-size: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .main-products-item {
+      h3 {
+        width: 100%;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+
+

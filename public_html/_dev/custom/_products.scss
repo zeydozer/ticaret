@@ -1,0 +1,247 @@
+.products {
+  text-align: center;
+  margin-bottom: 100px;
+  color: $main-color;
+
+  img {
+    width: 80%;
+  }
+
+  h5, .winnings {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  a {
+    color: $main-color;
+
+    &:hover {
+      color: $text-color;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .col-md-4 {
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    margin-bottom: 20px;
+
+    .col-md-4 {
+      &:last-child {
+        display: block;
+      }
+    }
+
+    .col-sm-6, .col-6 {
+      margin-bottom: 20px;
+    }
+
+    h5 {
+      display: block;
+      height: 57px;
+      overflow: hidden;
+    }
+  }
+}
+
+.prices {
+  padding: 25px 0 10px;
+  font-weight: 900;
+
+  .old {
+    font-size: 18px;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+
+    &:after {
+      content:'';
+      display: block;
+      height: 1px;
+      width: 100%;
+      background: $red;
+      position: absolute;
+      top: 15px;
+    }
+  }
+  .product-price {
+    font-size: 28px;
+    text-align: right;
+  }
+
+  @media (max-width: 1024px) {
+
+    .old {
+      font-size: 16px;
+
+      &:after {
+        width: 60%;
+        left: 50%;
+        margin-left: -30%;
+        top: 12px;
+      }
+    }
+    .product-price {
+      font-size: 22px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    display: block!important;
+
+    span {
+      display: block;
+      width: 100%;
+      text-align: center!important;
+    }
+    .old {
+      font-size: 16px;
+
+      &:after {
+        width: 30%;
+        margin-left: -15%;
+      }
+    }
+  }
+}
+
+
+.products-list {
+  padding: 10px 0 50px;
+
+  .products {
+    margin-bottom: 0px;
+  }
+
+  h1 {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    color: $main-color;
+    font-size: 60px;
+    font-weight: 900;
+    padding: 0 15px;
+  }
+
+  .filter {
+
+    .filter-button {
+      display: none;
+    }
+
+    .filter-item {
+      margin-bottom: 25px;
+
+      .title {
+        font-weight: 900;
+        color: $main-color;
+        display: block;
+        margin-bottom: 5px;
+        font-size: 18px;
+      }
+
+      .filter-line {
+        position: relative;
+        padding-left: 20px;
+
+        input {
+          position: absolute;
+          left: 0;
+          top: 3px;
+        }
+        label {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .list {
+
+    h5 {
+      font-size: 14px;
+      line-height: 18px;
+      height: 36px;
+      outline: none;
+    }
+    .old {
+      font-size: 14px;
+
+      &:after {
+        top: 10px;
+      }
+    }
+    .prices {
+      padding: 10px 0 0px;
+    }
+    .product-price {
+      font-size: 20px;
+    }
+
+    .list-item {
+      margin-bottom: 40px;
+    }
+  }
+  
+  .filter-top {
+    margin-bottom: 30px;
+    
+    .ranking {
+      
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: solid 1px $border;
+        line-height: 40px;
+        background: url("../images/select_arrow.svg") no-repeat $white;
+        background-position: right 10px top 16px;
+        padding: 0 30px 0 10px;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        outline: none;
+      }
+    }
+  }
+
+
+  @media (max-width: 1024px) {
+
+    h1 {
+      font-size: 44px;
+    }
+  }
+
+  @media (max-width: 576px) {
+
+    .filter {
+
+      .filter-button {
+        display: block;
+        width: 100%;
+        border: solid 1px $border;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: $text-color;
+
+        &:hover {
+          color: $main-color;
+          border-color: $main-color;
+        }
+      }
+
+      .filter-item {
+        display: none;
+      }
+    }
+  }
+}

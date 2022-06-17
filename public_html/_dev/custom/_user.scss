@@ -1,0 +1,25 @@
+.user-login {
+
+  h2 {
+    margin-bottom: 0;
+  }
+  span {
+    margin-bottom: 40px;
+    display: block;
+  }
+
+  .form-line, .form-line-no-line {
+    text-align: left;
+  }
+  .form-line-no-line {
+    margin-bottom: 0;
+    padding: 0;
+
+    label {
+      font-size: 13px;
+    }
+  }
+  button {
+    margin-top: 30px!important;
+  }
+}
